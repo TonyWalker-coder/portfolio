@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Git Cheat Sheet & Workflow</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      background: #f9f9f9;
+      color: #333;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    pre {
+      background: #eee;
+      padding: 1rem;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+    ul {
+      list-style: square;
+    }
+    .diagram {
+      margin: 2rem 0;
+      padding: 1rem;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: monospace;
+      white-space: pre;
+    }
+  </style>
+</head>
+<body>
+  <h1>Dublin based running club</h1>
+  <h2>Git Cheat Sheet</h2>
+
+  <h3>📂 File & Repo Setup</h3>
+  <pre>
+echo "# Dublin based running club" >> README.md
+echo "node_modules/" >> .gitignore
+git init
+  </pre>
+
+  <h3>📝 Staging & Committing</h3>
+  <pre>
+git add .
+git commit -m "Initial commit"
+git status
+  </pre>
+
+  <h3>🌐 Remote & Push</h3>
+  <pre>
+git remote add origin https://github.com/TonyWalker-coder/love-running.git
+git push -u origin main
+  </pre>
+
+  <h3>🔀 Branching & Switching</h3>
+  <pre>
+git checkout -b feature-branch
+git checkout main
+git merge feature-branch
+  </pre>
+
+  <h3>🛠 Quick Fixes</h3>
+  <pre>
+git reset --soft HEAD~1
+git checkout -- filename
+git reset filename
+  </pre>
+
+  <h2>Git Workflow Diagram</h2>
+  <div class="diagram">
+Working Directory ---> Staging Area ---> Local Repository ---> Remote Repository (GitHub)
+       (git add)          (git commit)          (git push)
+  </div>
+</body>
+</html>
