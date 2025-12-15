@@ -25,7 +25,14 @@ h2 {
     border-radius: 0;
 }
 /* About section */
-
+.btncolor {
+    background-color: #1f7798; /* mid-blue */
+    border-color: #1f7798; /* mid-blue */
+}
+.btncolor:hover {
+    background-color: #184f63; /* dark-blue */
+    border-color: #184f63; /* dark-blue */
+}
 #about {
     background-color: white;
 }
